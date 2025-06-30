@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Istraži Globus</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" class="logo" />
+    <h1>Istraži Globus</h1>
+    <p class="subtitle">"Nisu svi koji putuju – izgubljeni."</p>
+    <nav>
+      <button id="menu-toggle">Meni</button>
+      <ul id="menu" class="hidden">
+        <li><a href="istanbul.html">Putujmo u...</a></li>
+        <li><a href="#">Kuhinja</a></li>
+        <li><a href="#">Sport i infrastruktura</a></li>
+        <li><a href="#">Avio saobraćaj</a></li>
+        <li><a href="#">Top 5</a></li>
+        <li><a href="#">Pošte sveta</a></li>
+        <li><a href="#">Razno</a></li>
+        <li><a href="#">Kultura</a></li>
+        <li><a href="#">Geo kutak</a></li>
+        <li><a href="#">Istorija</a></li>
+        <li><a href="#">Priroda sveta</a></li>
+        <li><a href="#">Putovanje kroz film</a></li>
+        <li><a href="#">Mitovi i legende</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="slideshow">
+      <img src="slide1.jpg" alt="Plaža">
+      <img src="slide2.jpg" alt="Planina">
+      <img src="slide3.jpg" alt="Avion">
+    </div>
+  </main>
+  <script>
+    document.getElementById("menu-toggle").onclick = function () {
+      document.getElementById("menu").classList.toggle("hidden");
+    };
+  </script>
+</body>
+</html>
